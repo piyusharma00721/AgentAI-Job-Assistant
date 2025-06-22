@@ -4,7 +4,7 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 .env
-.env.*
+
 venv/
 agenticAi/  # If your venv folder has this name
 *.sqlite3
@@ -24,14 +24,6 @@ database/migrations/__pycache__/
 # ===== Secrets =====
 config/secrets.toml
 secrets.toml
-
-# ===== React (Node) =====
-frontend/client/node_modules/
-frontend/client/.env
-frontend/client/.next/
-frontend/client/.cache/
-frontend/client/dist/
-frontend/client/build/
 
 # ===== OS Specific =====
 .DS_Store
