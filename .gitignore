@@ -1,0 +1,42 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+
+venv/
+agenticAi/  # If your venv folder has this name
+*.sqlite3
+.mypy_cache/
+.pytest_cache/
+Pipfile.lock
+
+# ===== FastAPI Logs & Artifacts =====
+*.log
+*.pid
+
+# ===== Database & Migrations =====
+database/migrations/__pycache__/
+*.db
+*.sqlite
+
+# ===== Secrets =====
+config/secrets.toml
+secrets.toml
+
+# ===== OS Specific =====
+.DS_Store
+Thumbs.db
+
+# ===== IDEs & Editors =====
+.vscode/
+.idea/
+*.swp
+
+# ===== Others =====
+*.bak
+*.old
+*.tmp
+
+
