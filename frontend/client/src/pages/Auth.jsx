@@ -33,7 +33,7 @@ const handleLogin = async () => {
 
   return (
     <div style={styles.container}>
-      <div style={styles.glassCard}>
+      <div className="shadow-inset p-4 bg-white rounded-lg" style={styles.glassCard}>
         <h1 style={styles.title}>👋 Welcome to Agentic AI Job Assistant</h1>
         <input
           type="email"
@@ -79,7 +79,7 @@ const styles = {
   input: {
     color: "#ffffff",
     background: "rgba(238, 210, 255, 0.49)",   
-    color: "#ffffff",
+
     padding: "10px",
     width: "95%",
     borderRadius: "8px",
