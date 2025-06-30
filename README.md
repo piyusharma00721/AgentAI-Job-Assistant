@@ -1,7 +1,7 @@
 
 # 🧠 AgentAI Job Assistant  
 **Empower your career search with autonomous AI agents.**  
-An intelligent job assistant that organizes, applies, schedules, and prepares — so you don’t have to.
+An intelligent job assistant that organises, applies, schedules, and prepares — so you don’t have to.
 
 ---
 
@@ -125,8 +125,6 @@ uvicorn api.main:app --reload
 
 ---
 
-## 🙌 Contributing
-
 We’re actively building! Contributions are **welcome**:
 
 - Build new agents (email, job tracker)
@@ -137,8 +135,6 @@ We’re actively building! Contributions are **welcome**:
 📬 Open an issue or PR to start contributing!
 
 ---
-
-## 📢 Call to Action
 
 🎯 Tired of missing deadlines, managing job portals, and forgetting interviews?
 
