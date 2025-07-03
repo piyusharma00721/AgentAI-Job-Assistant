@@ -1,8 +1,12 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from api.routes import auth, calendar
+from database.db import init_db
+
 
 app = FastAPI(title="Agentic AI Job Assistant")
+# init_db()  # Automatically create table if missing
+
 
 # Optional: CORS for frontend access
 app.add_middleware(

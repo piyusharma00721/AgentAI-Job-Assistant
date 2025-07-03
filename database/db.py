@@ -21,6 +21,16 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 # Base class for models to inherit from
 Base = declarative_base()
 
+# ✅ This line is the key to auto-creating tables
+def init_db():
+    from database import models  # Make sure it loads model metadata
+    try:
+        print("Creating tables...")
+        Base.metadata.create_all(bind=engine)  # ✅ Now it can see UserToken
+        print("Tables created.")
+    except Exception as e:
+        print("Error while creating tables:", e)
+
 # Dependency function to inject DB session into FastAPI routes
 def get_db():
     db = SessionLocal()
